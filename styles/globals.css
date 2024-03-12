@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+:root {
+  --primaryColor: #78276a;
+  --secondaryColor: #232323;
+  --whiteColor: #fff;
+  --greenColor: #adc927;
+}
+body {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+  color: #232323;
+}
+h1 {
+  font-size: 40px;
+  font-family: "Roboto-bold";
+  font-weight: 700;
+}
+h2 {
+  font-size: 40px;
+  font-family: "Roboto-Regular";
+  font-weight: 700;
+}
+h3 {
+  font-size: 30px;
+  font-family: "Roboto-Regular";
+  font-weight: 700;
+}
+h4 {
+  font-size: 25px;
+  font-family: "Roboto-Regular";
+}
+h5 {
+  font-size: 20px;
+  font-family: "Roboto-Regular";
+}
+h6 {
+  font-size: 15px;
+  font-family: "Roboto-Regular";
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.RobatoH2light {
+  font-family: "Roboto-Light";
+  font-size: 25px;
+  font-weight: 300;
+}
+.fixedHead {
+  font-size: 40px;
+  font-family: "Roboto-bold";
+}
+
+@font-face {
+  font-family: "Roboto-bold";
+  src: url("../public/Fonts/Roboto-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../public/Fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../public/Fonts/Roboto-Light.ttf");
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 20px;
+    font-family: "Roboto-Regular";
+    font-weight: 400;
+  }
+  h2 {
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+    font-weight: 300;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Roboto-Regular";
+  }
+  h4 {
+    font-size: 25px;
+    font-weight: 500;
+    font-family: "Roboto-Regular";
+  }
+  h5 {
+    font-size: 17px;
+    font-family: "Roboto-Regular";
+    font-family: 400;
+  }
+  h6 {
+    font-size: 16px;
+    font-family: "Roboto-Regular";
+  }
+  .fixedHead {
+    font-size: 20px;
+    font-family: "Roboto-bold";
+  }
+}
+/*---------------------Comman-------------------*/
+/*---Btn---*/
+.textdec {
+  text-decoration: none;
+  color: #232323;
+}
+.textdec:hover {
+  color: var(--whiteColor);
+}
+.greenButton {
+  background-color: var(--greenColor); /* Fallback color */
+  color: #232323;
+  display: inline-block;
+  padding: 7px 20px;
+  font-weight: 400;
+  border: 1px solid var(--whiteColor);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  background-image: linear-gradient(
+    to right,
+    var(--primaryColor) 0%,
+    var(--primaryColor) 50%,
+    var(--greenColor) 50%
+  );
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: background-position 0.5s ease-out, color 0.3s ease;
+}
+
+.greenButton:hover {
+  color: var(--whiteColor);
+  background-position: left bottom;
+}
+.phyviobtn {
+  background-color: var(--primaryColor);
+  color: var(--whiteColor);
+  display: inline-block;
+  padding: 7px 20px;
+  font-weight: 400;
+  border: 1px solid var(--whiteColor);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  border-radius: 50px;
+  margin: 0 2px;
+}
+.phyviobtn:hover {
+  background-color: var(--whiteColor);
+  color: #232323;
+  display: inline-block;
+  border: 1px solid var(--whiteColor);
+}
+
+.phycallbtn {
+  background-color: var(--greenColor);
+  color: #232323;
+  display: inline-block;
+  padding: 7px 20px;
+  font-weight: 400;
+  border: 1px solid var(--whiteColor);
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  border-radius: 50px;
+  margin: 0 2px;
+}
+.phycallbtn:hover {
+  color: var(--whiteColor);
+}
+/*---green line---*/
+.unl {
+  display: block;
+  width: 83px;
+  border: 0;
+  /* margin-left: 15px; */
+  height: 4px;
+  background: var(--greenColor);
+  transition: all 0.5s;
+  /* margin-top: -5px; */
+}
+
+@media (max-width: 768px) {
+  .MediaBtnCenter {
+    justify-content: center;
+    display: flex;
+  }
+}
+/*---toggle---*/
+.togglehead {
+  background-color: var(--greenColor);
+  border-radius: 6px;
+  color: var(--whiteColor);
+}
+/*----round----*/
+.roundd {
+  height: 10px;
+  width: 10px;
+  border: 6px double var(--greenColor);
+  border-radius: 50%;
+  margin-top: 6px;
+}
+.rounddBink {
+  height: 10px;
+  width: 10px;
+  border: 6px double #d248ba;
+  border-radius: 50%;
+  margin-top: 6px;
+}
+.rounddPlane {
+  background: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #9b3fbb;
+  margin-top: 6px;
+  padding-right: 10px;
+}
+._unl_app {
+  display: block;
+  width: 18%;
+  margin: 9px auto;
+  height: 4px;
+  background: #adc927;
+  transition: all 0.5s;
+}
+.Knowmorebtndiv {
+  display: flex;
+  justify-content: center;
+}
+.Knowmorebtn {
+  padding: 4px 17px;
+  font-size: 12px;
+  transition: all 0.5s;
+  background: var(--primaryColor);
+  border-radius: 5px;
+  color: var(--whiteColor);
+  display: inline-block;
+  margin: 5px 0 0;
+  /* border: 1px solid #fff; */
+  text-decoration: none !important;
+}
+.Knowmorebtn:hover {
+  background-color: var(--whiteColor);
+  color: #232323;
+  box-shadow: 0;
+}
